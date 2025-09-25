@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تیم طراحی وبسایت اکتیوب - خدمات حرفه‌ای طراحی و توسعه وب، React، Vue.js، Node.js، طراحی UI/UX و دیجیتال مارکتینگ">
+    <meta name="keywords" content="طراحی وبسایت، توسعه وب، React، Vue.js، Node.js، UI/UX، دیجیتال مارکتینگ، اکتیوب">
+    <meta name="author" content="تیم اکتیوب">
+    <meta property="og:title" content="اکتیوب - تیم طراحی وبسایت">
+    <meta property="og:description" content="تیم حرفه‌ای طراحی و توسعه وبسایت با تکنولوژی‌های مدرن">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://actiweb.ir/">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://actiweb.ir/">
+    <title>اکتیوب - تیم طراحی وبسایت | خدمات حرفه‌ای توسعه وب</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="aaa.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="aaa.png">
+    <link rel="shortcut icon" href="aaa.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir@v30.1.0/dist/font-face.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <label class="switch" aria-label="تغییر تم">
+                <input id="checkbox" type="checkbox" onchange="toggleTheme()" aria-label="تغییر به حالت تاریک" />
+                <span class="slider">
+                    <div class="star star_1"></div>
+                    <div class="star star_2"></div>
+                    <div class="star star_3"></div>
+                    <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
+                        <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path>
+                    </svg>
+                </span>
+            </label>
+            <div class="header-title">
+                ACTIWEB
+            </div>
+            <nav class="header-menu" role="navigation" aria-label="منوی اصلی">
+                <button class="menu-item" onclick="scrollToSection('skills')" aria-label="رفتن به بخش حرفه ما">حرفه ما</button>
+                <button class="menu-item" onclick="scrollToSection('portfolio')" aria-label="رفتن به بخش نمونه کار">نمونه کار</button>
+                <button class="menu-item" onclick="scrollToSection('contact')" aria-label="رفتن به بخش همکاری">همکاری</button>
+            </nav>
+            <div class="quick-access">
+                <div class="quick-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="quick-menu">
+                    <div class="quick-item" data-target="skills">حرفه ما</div>
+                    <div class="quick-item" data-target="portfolio">نمونه کار</div>
+                    <div class="quick-item" data-target="contact">همکاری</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="background-blur">
+        <div class="binary-code binary-1">const team = 'Octave';</div>
+        <div class="binary-code binary-2">function develop() { return 'success'; }</div>
+        <div class="binary-code binary-3">let experience = 5;</div>
+        <div class="binary-code binary-4">console.log('Hello World');</div>
+        <div class="binary-code binary-5">const quality = true;</div>
+        <div class="binary-code binary-6">async function build() { await deploy(); }</div>
+        <div class="binary-code binary-7">export default { name: 'Octave' };</div>
+    </div>
+    
+    <main>
+    <section class="hero fullscreen" id="home">
+        <div class="hero-content fade-text">
+            <h1 class="team-name-fa">تیم طراحی وبسایت اکتیوب</h1>
+            <h2 class="team-name-en">actiweb Development Team</h2>
+            <p class="slogan">ما با هر خط کد مرز همه ی ممکن رو جابجا میکنیم</p>
+
+        </div>
+    </section>
+
+    <section class="about fullscreen" id="about">
+        <div class="about-content">
+            <h2 class="fade-text">درباره ما</h2>
+            <p class="long-text fade-text">
+              تیم برنامه‌نویسی و طراحی وب‌سایت «اکتیوب» مجموعه‌ای حرفه‌ای، خلاق و پرانرژی از متخصصان جوان و باانگیزه است که با تمرکز بر کیفیت، نوآوری و رضایت مشتری، خدمات متنوعی در حوزه طراحی رابط کاربری، توسعه وب، سئو، تولید محتوا و دیجیتال مارکتینگ ارائه می‌دهد. اعضای تیم اکتیوب با بهره‌گیری از دانش روز، تجربه عملی و تسلط بر تکنولوژی‌های مدرن مانند HTML، CSS، JavaScript، TypeScript، React، Vue.js، Node.js، Tailwind CSS، MongoDB و ابزارهای طراحی مانند Penpot و ابزارهای متن‌باز، تلاش می‌کنند تا وب‌سایت‌هایی زیبا، سریع، امن و کاربرپسند خلق کنند که نه‌تنها نیازهای فنی مشتری را برآورده سازد، بلکه تجربه‌ای دلپذیر و مؤثر برای کاربران نهایی فراهم آورد.
+ما در اکتیوب باور داریم که طراحی وب‌سایت فقط کدنویسی نیست، بلکه ترکیبی از هنر، تحلیل، تجربه کاربری و شناخت دقیق بازار است؛ به همین دلیل، هر پروژه را با دقت، برنامه‌ریزی و تعامل مستمر با مشتری پیش می‌بریم تا نتیجه‌ای منحصربه‌فرد و قابل افتخار حاصل شود. اکتیوب با روحیه تیمی، تعهد بالا و علاقه به یادگیری مداوم، آماده همکاری با کسب‌وکارها، استارتاپ‌ها و افراد خلاقی است که می‌خواهند در فضای دیجیتال بدرخشند و حضوری حرفه‌ای و ماندگار داشته باشند.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills fullscreen" id="skills">
+        <div class="skills-content">
+            <h2 class="fade-text" data-fa="حرفه ما" data-en="Our Profession">حرفه ما</h2>
+            <div class="profession-container">
+                <div class="profession-card code-style fade-text">
+                    <div class="code-content">
+                        <div class="tech-grid">
+                            <div class="tech-item js">
+                                <div class="tech-name">JavaScript</div>
+                                <div class="tech-code"><span class="keyword">const</span> <span class="var">js</span> = <span class="string">"JavaScript"</span>;</div>
+                            </div>
+                            <div class="tech-item react">
+                                <div class="tech-name">React</div>
+                                <div class="tech-code"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</div>
+                            </div>
+                            <div class="tech-item next">
+                                <div class="tech-name">Next.js</div>
+                                <div class="tech-code"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function">NextApp</span>();</div>
+                            </div>
+                            <div class="tech-item ts">
+                                <div class="tech-name">TypeScript</div>
+                                <div class="tech-code"><span class="keyword">interface</span> <span class="type">TypeScript</span> {}</div>
+                            </div>
+                            <div class="tech-item node">
+                                <div class="tech-name">Node.js</div>
+                                <div class="tech-code"><span class="keyword">require</span>(<span class="string">'node.js'</span>);</div>
+                            </div>
+                            <div class="tech-item python">
+                                <div class="tech-name">Python</div>
+                                <div class="tech-code"><span class="keyword">import</span> <span class="var">python</span> <span class="keyword">as</span> <span class="var">py</span></div>
+                            </div>
+                            <div class="tech-item php">
+                                <div class="tech-name">PHP</div>
+                                <div class="tech-code">&lt;?<span class="keyword">php</span> <span class="function">echo</span> <span class="string">"PHP"</span>; ?&gt;</div>
+                            </div>
+                            <div class="tech-item mongo">
+                                <div class="tech-name">MongoDB</div>
+                                <div class="tech-code"><span class="var">db</span>.<span class="function">collection</span>(<span class="string">'mongo'</span>)</div>
+                            </div>
+                            <div class="tech-item tailwind">
+                                <div class="tech-name">Tailwind</div>
+                                <div class="tech-code"><span class="keyword">@apply</span> <span class="var">tailwind-css</span>;</div>
+                            </div>
+                            <div class="tech-item html">
+                                <div class="tech-name">HTML</div>
+                                <div class="tech-code">&lt;<span class="keyword">html</span>&gt;<span class="var">content</span>&lt;/<span class="keyword">html</span>&gt;</div>
+                            </div>
+                            <div class="tech-item css">
+                                <div class="tech-name">CSS</div>
+                                <div class="tech-code"><span class="var">.css</span> { <span class="property">style</span>: <span class="string">"modern"</span>; }</div>
+                            </div>
+                            <div class="tech-item vue">
+                                <div class="tech-name">Vue.js</div>
+                                <div class="tech-code"><span class="keyword">import</span> { <span class="function">createApp</span> } <span class="keyword">from</span> <span class="string">'vue'</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-content">
+            <h2 class="fade-text">نمونه کار</h2>
+            <div class="portfolio-box fade-text">
+                <div class="portfolio-header">
+                    <div class="portfolio-buttons">
+                        <span class="portfolio-btn red"></span>
+                        <span class="portfolio-btn yellow"></span>
+                        <span class="portfolio-btn green"></span>
+                    </div>
+                    <span class="portfolio-filename">project.js</span>
+                </div>
+                <div class="portfolio-content-box">
+                    <span class="portfolio-code">console.log("<span class="portfolio-text">سامانه ارتباط مردمی اموزش و پرورش </span>");</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="why-us-content">
+            <h2 class="fade-text">چرا تیم اکتیوب؟</h2>
+            <div class="minimal-box">
+                <div class="minimal-header">
+                    <div class="minimal-buttons">
+                        <span class="minimal-btn red"></span>
+                        <span class="minimal-btn yellow"></span>
+                        <span class="minimal-btn green"></span>
+                    </div>
+                    <span class="minimal-filename">why-octave.js</span>
+                </div>
+                <div class="minimal-content">
+                    <span class="minimal-code">console.log("<span class="typed-text"></span>");</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team fullscreen" id="team">
+        <div class="team-content">
+            <h2 class="fade-text">اعضای تیم</h2>
+            <div class="team-grid">
+                <div class="dev-card fade-text">
+                    <div class="terminal-header">
+                        <span class="prompt">$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="dev-info">
+                        <div class="name">آرین خسروی</div>
+                        <div class="role">Frontend & UI/UX</div>
+                        <div class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" onclick="window.open('https://t.me/ari0101010101', '_blank')">
+                                <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" onclick="window.open('https://www.instagram.com/arian.11010?igsh=MWZqc2RmMDdtbzFzNQ==', '_blank')">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="dev-card fade-text">
+                    <div class="terminal-header">
+                        <span class="prompt">$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="dev-info">
+                        <div class="name">سجاد احمدی نژاد</div>
+                        <div class="role">Backend</div>
+                        <div class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" onclick="window.open('https://t.me/Godofzombies', '_blank')">
+                                <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" onclick="window.open('https://www.instagram.com/amirsajadahmadi.87?igsh=MXQwNzV3dXprOWQx', '_blank')">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact fullscreen" id="contact">
+        <div class="contact-content">
+            <h2 class="fade-text">شروع همکاری با ما</h2>
+            <div class="contact-editor fade-text">
+                <div class="editor-header">
+                    <div class="editor-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="editor-title">contact.js</span>
+                </div>
+                <div class="editor-body">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon phone-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-number">09027901490</div>
+                                <div class="contact-desc">تماس با ما</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon telegram-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-text tech-font">t.me/acti_web</div>
+                                <div class="contact-desc">ارتباط با ما</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon instagram-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-text tech-font">acti.web</div>
+                                <div class="contact-desc">اینستاگرام ما </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon github-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-text tech-font">github.com/ActiWeb</div>
+                                <div class="contact-desc">گیتهاب ما</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <span class="copyright">©</span>
+                <span class="footer-message">حقوق وبسایت محفوظ میباشد - تیم برنامه نویسی اکتیوب</span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "اکتیوب",
+      "alternateName": "ActiWeb",
+      "url": "https://actiweb.com",
+      "description": "تیم طراحی وبسایت اکتیوب - خدمات حرفهای طراحی و توسعه وب، React، Vue.js، Node.js، طراحی UI/UX و دیجیتال مارکتینگ",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-902-790-1490",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://t.me/acti_web",
+        "https://instagram.com/acti.web",
+        "https://github.com/ActiWeb"
+      ]
+    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
